@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>blogpost</title>
+    <script src="https://kit.fontawesome.com/fb5703760f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="header">
@@ -13,12 +17,103 @@
        <div class="empty"></div>
        <div class="links-container">      
         <ul class="links">
-         <li><a href="index.html">home</a></li>
-         <li><a href="about.html">about</a></li>
-         <li><a href="blog.html">blogs</a></li>
-         <li><a href="contact.html">contact</a></li>
+         <li class="first-link"><a href="index.html">home</a></li>
+         <li class="second-link"><a href="about.html" >blogs</a></li>
+         <li class="third-link"><a href="blog.html" >featured</a></li>
+         <li class="fourth-link"><a href="contact.html">contact</a></li>
        </ul>
        </div>
+      </div>
+    </div>
+    <div id="home" class="home">
+      <div class="heading-1">
+        <h1>welcome <br> to <br> my blog</h1>
+      </div>
+      <div class="intro">
+        <div class="your-image">
+          <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="your-intro">
+          <p>Hey! My name is ______. I write on <br>
+  technology, business, startup ideas <br>
+  & human behavior. </p>
+        </div>
+      </div>
+    </div>
+    <div class="blogs">
+      <div class="recent-blogs">
+        <div class="sub-header">
+          <i class="fa-solid fa-list"></i>
+          <h2>recently posted</h2>
+        </div>
+        <div class="sub-list">
+          <ul class="blog-links">
+            <li><i class="fa-solid fa-link"></i><a href="">Gig Economy in 2022</a></li>
+            <li><i class="fa-solid fa-link"></i><a href="">Navigating the Bear market</a></li>
+            <li><i class="fa-solid fa-link"></i><a href="">Science behind Content Creation</a></li>
+            <li><i class="fa-solid fa-link"></i><a href="">Why is Twitter Deal stuck?</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="viewed-blogs">
+        <div class="sub-header">
+          <i class="fa-solid fa-eye"></i>
+          <h2>most viewed</h2>
+        </div>
+        <div class="sub-list">
+          <ul class="blog-links">
+            <li><i class="fa-solid fa-link"></i><a href="">Full Time Roles Vs Freelancing</a></li>
+            <li><i class="fa-solid fa-link"></i><a href="">The future of AI in India</a></li>
+            <li><i class="fa-solid fa-link"></i><a href="">Top 50 Indian Serial Entrepreneurs</a></li>
+            <li><i class="fa-solid fa-link"></i><a href="">Middle East & Formula 1</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="featured-blogs">
+      <div class="featured-header">
+        <i class="fa-solid fa-bookmark"></i>
+        <h1>featured blogs</h1>
+      </div>
+      <div class="slide-container">
+        <div class="slide">
+          <img src="./img-1.png" alt="">
+          <h1>Role of Human Behaviour
+ in App Design</h1>
+        </div>
+        <div class="slide">
+          <img src="./img-2.png" alt="">
+          <h1>Five Reasons to be 
+socially active</h1>
+        </div>
+        <div class="slide">
+          <img src="./img-3.png" alt="">
+          <h1>Has School made 
+our life dull?</h1>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button type="button" class="prevBtn">prev</button>
+        <button type="button" class="nextBtn">next</button>
+      </div>
+    </div>
+    <div class="contact-me">
+      <div class="contact-header">
+        <h1>contact me</h1>
+      </div>
+      <div class="contact-links">
+        <a href="">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-instagram-square"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
       </div>
     </div>
     <!-- javascript -->

@@ -7,11 +7,12 @@
   padding: 0;
   box-sizing: border-box;
   text-transform: capitalize;
-  background: rgb(214, 255, 242);
+  background: #d6fff2;
+  overflow-x: hidden;
 }
 
 .nav {
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   display: grid;
   justify-content: end;
 }
@@ -19,23 +20,228 @@
 .links-container,
 .empty,
 .links {
-  height: 4rem;
+  height: 7rem;
 }
 
 .links {
   list-style-type: none;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
 }
 
 .links a {
   text-decoration: none;
   color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: large;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
 }
 
 .links li {
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 1.1rem;
+}
+
+.third-link,
+.second-link,
+.first-link {
+  transform: translateX(20%);
+}
+
+.second-link {
+  transform: translateX(30%);
+}
+
+.first-link {
+  transform: translateX(40%);
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 2rem;
+}
+
+.home h1 {
+  text-align: end;
+  font-size: 7rem;
+  font-family: "Familjen Grotesk", sans-serif;
+  line-height: 10rem;
+  transform: translateX(-20%);
+}
+
+.intro i {
+  transform: translateX(50%);
+  font-size: 22rem;
+}
+
+.intro p {
+  text-align: left;
+  transform: translateX(15%);
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 2rem;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 10rem;
+}
+
+.sub-header {
+  text-align: center;
+}
+
+.sub-header h2 {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.3rem;
+  margin-left: 0.5rem;
+}
+
+.sub-header i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.sub-list {
+  margin-top: 2rem;
+}
+
+.blog-links {
+  list-style-type: none;
+  text-align: left;
+}
+
+.blog-links li {
+  line-height: 5.5rem;
+}
+
+.recent-blogs .blog-links li {
+  width: 30rem;
+  transform: translateX(50%);
+}
+
+.blog-links li i {
+  font-size: 1.7rem;
+  margin-right: 1rem;
+  transform: translateY(15%);
+}
+
+.blog-links a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-size: 1.7rem;
+}
+
+.viewed-blogs .sub-header {
+  width: 30rem;
+}
+
+.viewed-blogs .blog-links li {
+  width: 31rem;
+  transform: translateX(27%);
+}
+
+.featured-blogs {
+  margin-top: 7rem;
+}
+
+.featured-header {
+  text-align: center;
+}
+
+.featured-header i {
+  font-size: 3rem;
+  margin-right: 2rem;
+  transform: translateY(-20%);
+}
+
+.featured-header h1 {
+  display: inline-block;
+  font-size: 3.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.slide-container {
+  border: 5px solid hsl(0, 1%, 32%);
+  width: 60vw;
+  position: relative;
+  height: 70vh;
+  margin: 3rem auto 0 auto;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  place-items: center;
+  text-align: center;
+}
+
+.slide img {
+  height: 80%;
+  width: 80%;
+}
+
+.slide h1 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 0.75rem;
+}
+
+.prevBtn,
+.nextBtn {
+  background: transparent;
+  border-color: transparent;
+  font-size: 1.75rem;
+  cursor: pointer;
+  margin: 0 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  color: hsl(161, 79%, 54%);
+}
+
+.contact-me {
+  margin-top: 5rem;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-size: 3.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact-links {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-links i {
+  font-size: 5rem;
+  margin: 0 3rem 0 3rem;
+}
+
+.contact-links i:hover {
+  color: hsl(161, 79%, 54%);
 }

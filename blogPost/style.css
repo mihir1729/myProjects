@@ -7,8 +7,20 @@
   padding: 0;
   box-sizing: border-box;
   text-transform: capitalize;
-  background: #d6fff2;
   overflow-x: hidden;
+}
+
+.header {
+  background: #d6fff2;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(28, 26, 26, 0.7);
 }
 
 .nav {
@@ -20,7 +32,7 @@
 .links-container,
 .empty,
 .links {
-  height: 7rem;
+  height: 4rem;
 }
 
 .links {
@@ -38,7 +50,7 @@
 
 .links li {
   text-align: center;
-  margin-top: 1.1rem;
+  margin-top: 0.5rem;
 }
 
 .third-link,
@@ -58,7 +70,8 @@
 .home {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-top: 2rem;
+  padding-top: 2rem;
+  background: #d6fff2;
 }
 
 .home h1 {
@@ -85,7 +98,8 @@
 .blogs {
   display: grid;
   grid-template-columns: auto auto;
-  margin-top: 10rem;
+  padding-top: 7.5rem;
+  background: #d6fff2;
 }
 
 .sub-header {
@@ -146,7 +160,8 @@
 }
 
 .featured-blogs {
-  margin-top: 7rem;
+  padding-top: 4rem;
+  background: #d6fff2;
 }
 
 .featured-header {
@@ -170,7 +185,7 @@
   width: 60vw;
   position: relative;
   height: 70vh;
-  margin: 3rem auto 0 auto;
+  margin: 1rem auto 0 auto;
 }
 
 .slide {
@@ -202,11 +217,9 @@
 .nextBtn {
   background: transparent;
   border-color: transparent;
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   cursor: pointer;
-  margin: 0 0.25rem;
-  text-transform: capitalize;
-  letter-spacing: 2px;
+  margin: 0 1rem;
 }
 
 .prevBtn:hover,
@@ -215,7 +228,8 @@
 }
 
 .contact-me {
-  margin-top: 5rem;
+  padding-top: 5rem;
+  background: #d6fff2;
 }
 
 .contact-header {
